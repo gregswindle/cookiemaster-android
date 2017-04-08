@@ -92,7 +92,13 @@ test {
 }
 
 dependencyUpdates.revision = 'release'
-jacocoTestReport.reports.xml.enabled = true
+// jacocoTestReport.reports.xml.enabled = true
+jacocoTestReport {
+    reports {
+        xml.enabled = true // coveralls plugin depends on xml format report
+        html.enabled = true
+    }
+}
 
 
 task showDependenciesTree(dependsOn: 'htmlDependencyReport', group: 'help', description:
