@@ -1,0 +1,5 @@
+{
+    "proxy": "http://tpaproxy.verizon.com:80",
+    "https-proxy": "http://tpaproxy.verizon.com:80",
+    "strict-ssl": false
+}

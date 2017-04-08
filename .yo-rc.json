@@ -1,0 +1,20 @@
+{
+  "generator-lib-java": {
+    "githubUser": "gregswindle",
+    "authorName": "Greg Swindle",
+    "authorEmail": "greg@swindle.net",
+    "libName": "cookiemaster-android",
+    "libGroup": "com.verizon.api",
+    "libPackage": "com.verizon.api.cookiemaster.android",
+    "libVersion": "0.1.0",
+    "libDesc": "Native Android extraction from com.cordova.plugins.cookiemaster.CookieMaster for reuse in native Android as well as Cordova.",
+    "targetJava": "1.6",
+    "libTags": "android,cookies",
+    "bintrayUser": "gregswindle",
+    "bintrayRepo": "cookiemaster-android",
+    "bintraySignFiles": true,
+    "mavenCentralSync": true,
+    "enableQualityChecks": true,
+    "usedGeneratorVersion": "2.3.0"
+  }
+}
