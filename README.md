@@ -1,4 +1,6 @@
 # `cookiemaster-android`
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/gregswindle/cookiemaster-android.svg)](https://greenkeeper.io/)
 [![License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](http://www.opensource.org/licenses/MIT)
 [![Build Status](http://img.shields.io/travis/gregswindle/cookiemaster-android.svg?style=flat&branch=master)](https://travis-ci.org/gregswindle/cookiemaster-android)
 [![Coverage Status](https://img.shields.io/coveralls/gregswindle/cookiemaster-android.svg?style=flat)](https://coveralls.io/r/gregswindle/cookiemaster-android?branch=master)
