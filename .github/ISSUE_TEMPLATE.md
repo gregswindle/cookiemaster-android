@@ -5,9 +5,22 @@
 - [ ] Enhancement/feature request
 - [ ] Feedback, suggestions, or questions
 
-## Expected Behavior
+<!--- If you're suggesting a change/improvement, uncomment this block -->
+<!-- ## User story -->
+<!-- As a <role>,
+I must/need/want/should <do something>
+In order to <achieve business value>. -->
+
+<!--- If you're suggesting a change/improvement, uncomment this block -->
+<!-- ## Acceptance criteria
+1.
+2.
+3.
+4.  -->
+
 <!--- If you're describing a bug, tell us what should happen -->
-<!--- If you're suggesting a change/improvement, tell us how it should work -->
+## Expected Behavior
+
 
 ## Current Behavior
 <!--- If describing a bug, tell us what happens instead of the expected behavior -->

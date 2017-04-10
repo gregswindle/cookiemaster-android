@@ -1,3 +1,5 @@
+# `cookiemaster-android`
+
 > Native Android extraction from `com.cordova.plugins.cookiemaster.CookieMaster` for reuse in native Android as well as Cordova.
 
 [![License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](http://www.opensource.org/licenses/MIT)
@@ -9,19 +11,49 @@
 
 ### 1.1. Get a cookie by URL and name
 
+```java
+String url = "https://example.com/cookies";
+String cookieName = "foo";
+HttpCookie cookie = CookieMaster.getCookieValue(url, cookieName);
+```
+
 ### 1.2. Set a cookie by URL and name
 
-### 1.3. Clear all cookies
+```java
+String url = "https://example.com/cookies";
+String cookieName = "foo";
+String cookieValue = "bar";
+CookieMaster.getCookieValue(url, cookieName, cookieValue);
+```
+
+### 1.3. Set a cookie with JSON
+
+```java
+// json is a serialized HttpCookie
+HttpCookie cookie = CookieMaster.cookieFromJson(json);
+```
+
+### 1.4. Serialize an HttpCookie to JSON
+
+```java
+// cookie is an HttpCookie
+String jsonCookie = CookieMaster.cookieToJson(cookie);
+```
+
+### 1.5. Clear all cookies
+
+```java
+CookieMaster.clear();
+```
 
 ## 2. Setup
 
-Releases are published to [bintray jcenter](https://bintray.com/gregswindle/cookiemaster-android/cookiemaster-android/) and
+Releases ~~are~~ _will be_ published to [bintray jcenter](https://bintray.com/gregswindle/cookiemaster-android/cookiemaster-android/) and
 [maven central](https://maven-badges.herokuapp.com/maven-central/com.verizon.api/cookiemaster-android).
 
-<!---
 [![JCenter](https://img.shields.io/bintray/v/gregswindle/cookiemaster-android/cookiemaster-android.svg?label=jcenter)](https://bintray.com/gregswindle/cookiemaster-android/cookiemaster-android/_latestVersion)
 [![Maven Central](https://img.shields.io/maven-central/v/com.verizon.api/cookiemaster-android.svg?style=flat)](https://maven-badges.herokuapp.com/maven-central/com.verizon.api/cookiemaster-android)
--->
+
 
 ### 2.1. Maven
 
@@ -35,7 +67,9 @@ Releases are published to [bintray jcenter](https://bintray.com/gregswindle/cook
 
 ### 2.2. Gradle
 
-```groovy
+Add `com.verizon.api:cookiemaster-android` to your `build.gradle`'s `dependencies`:
+
+```gradle
 compile 'com.verizon.api:cookiemaster-android:0.1.0'
 ```
 
@@ -90,6 +124,13 @@ $ brew install gradle
 
 ## 5. Reports :chart_with_upwards_trend:
 
+> ### :white_check_mark: Generate a project report
+>
+> Generate project reports for all dependencies, properties, and tasks in your `<project-root>/build/reports/project` directory:
+> ```
+> $ ./gradlew projectReport
+> ```
+
 ### 5.1. Code quality and test reports
 
 Use the following command to run code quality plugins and tests. If quality checks were activated (asked during generation) do check before pushing to avoid build failures on travis. Moreover, it's easy to always keep everything clean instead of doing it before release.
@@ -98,9 +139,9 @@ Use the following command to run code quality plugins and tests. If quality chec
 $ ./gradlew check
 ```
 
-### 5.2. Project dependencies in a Terminal
+### 5.2. Project dependency updates
 
-Check whether your project dependencies are valid and prints a version analysis report to console.
+Checks whether your project is using the latest available versions in its dependencies. If not, you'll see which upgrades are available.
 
 ```
 $ ./gradlew dependencyUpdates
@@ -145,6 +186,12 @@ $ ./gradlew install
 ```
 $ ./gradlew release
 ```
+
+## 8. [Building Android Projects with Gradle](https://spring.io/guides/gs/gradle-android/)
+
+> ### :bookmark: Tutorial
+>
+> Spring has a good tutorial called [_Building Android Projects with Gradle_](https://spring.io/guides/gs/gradle-android/).
 
 ---
 [![java lib generator](http://img.shields.io/badge/Powered%20by-%20Java%20lib%20generator-green.svg?style=flat-square)](https://github.com/xvik/generator-lib-java)
