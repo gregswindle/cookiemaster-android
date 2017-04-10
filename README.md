@@ -7,6 +7,35 @@
 [![Coverage Status](https://img.shields.io/coveralls/gregswindle/cookiemaster-android.svg?style=flat)](https://coveralls.io/r/gregswindle/cookiemaster-android?branch=master)
 [![Greenkeeper badge](https://badges.greenkeeper.io/gregswindle/cookiemaster-android.svg)](https://greenkeeper.io/)
 
+---
+<!-- TOC depthFrom:2 depthTo:4 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [1. Features](#1-features)
+	- [1.1. Get a cookie by URL and name](#11-get-a-cookie-by-url-and-name)
+	- [1.2. Set a cookie by URL and name](#12-set-a-cookie-by-url-and-name)
+	- [1.3. Set a cookie with JSON](#13-set-a-cookie-with-json)
+	- [1.4. Serialize an HttpCookie to JSON](#14-serialize-an-httpcookie-to-json)
+	- [1.5. Clear all cookies](#15-clear-all-cookies)
+- [2. Setup](#2-setup)
+	- [2.1. Maven](#21-maven)
+	- [2.2. Gradle](#22-gradle)
+- [3. Snapshots](#3-snapshots)
+- [4. Recommended prerequisites](#4-recommended-prerequisites)
+	- [4.1. [`Homebrew`](https://brew.sh/)](#41-homebrewhttpsbrewsh)
+	- [4.2. [`jenv`](http://www.jenv.be/)](#42-jenvhttpwwwjenvbe)
+	- [4.3. `java`](#43-java)
+	- [4.4. [`gradle`](https://gradle.org/install#with-homebrew)](#44-gradlehttpsgradleorginstallwith-homebrew)
+- [5. Reports :chart_with_upwards_trend:](#5-reports-chartwithupwardstrend)
+	- [5.1. Code quality and test reports](#51-code-quality-and-test-reports)
+	- [5.2. Project dependency updates](#52-project-dependency-updates)
+	- [5.3. Project dependencies tree in a Terminal](#53-project-dependencies-tree-in-a-terminal)
+	- [5.4. Dependency reports for Web browsers](#54-dependency-reports-for-web-browsers)
+- [6. Dependency management](#6-dependency-management)
+- [7. Deployment](#7-deployment)
+- [8. [Building Android Projects with Gradle](https://spring.io/guides/gs/gradle-android/)](#8-building-android-projects-with-gradlehttpsspringioguidesgsgradle-android)
+
+<!-- /TOC -->
+
 ## 1. Features
 
 ### 1.1. Get a cookie by URL and name
