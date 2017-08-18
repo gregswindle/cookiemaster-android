@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "generator-lib-java": "^2.3.0",
+    "generator-lib-java": "^2.4.0",
     "global": "^4.3.1"
   }
 }
